@@ -78,17 +78,18 @@ namespace Exam.Controllers
         {
             if (ModelState.IsValid)
             {
+                //Kiem tra Contact Name va Contact Number khong bi trung
                 bool isContactNameDuplicate = _context.Contacts.Any(c => c.ContactName == contact.ContactName);
                 bool isContactNumberDuplicate = _context.Contacts.Any(c => c.ContactNumber == contact.ContactNumber);
 
                 if (isContactNameDuplicate)
                 {
-                    ModelState.AddModelError("ContactName", "Contact Name already exists.");
+                    ModelState.AddModelError("ContactName1", "Contact Name already exists.");
                 }
 
                 if (isContactNumberDuplicate)
                 {
-                    ModelState.AddModelError("ContactNumber", "Contact Number already exists.");
+                    ModelState.AddModelError("ContactNumber1", "Contact Number already exists.");
                 }
 
                 if (isContactNameDuplicate || isContactNumberDuplicate)

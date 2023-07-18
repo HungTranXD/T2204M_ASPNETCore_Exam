@@ -17,10 +17,10 @@
                 <label asp-for="ContactName" class="control-label"></label>
                 <input asp-for="ContactName" class="form-control" />
                 <span asp-validation-for="ContactName" class="text-danger"></span>
-                @if (ViewData.ModelState["ContactName"]?.Errors.Count > 0)
+                @if (ViewData.ModelState["ContactName1"]?.Errors.Count > 0)
                 {
                     <span class="text-danger">
-                        @ViewData.ModelState["ContactName"]?.Errors[0].ErrorMessage
+                        @ViewData.ModelState["ContactName1"]?.Errors[0].ErrorMessage
                     </span>
                 }
             </div>
@@ -28,10 +28,10 @@
                 <label asp-for="ContactNumber" class="control-label"></label>
                 <input asp-for="ContactNumber" class="form-control" />
                 <span asp-validation-for="ContactNumber" class="text-danger"></span>
-                @if (ViewData.ModelState["ContactNumber"]?.Errors.Count > 0)
+                @if (ViewData.ModelState["ContactNumber1"]?.Errors.Count > 0)
                 {
                     <span class="text-danger">
-                        @ViewData.ModelState["ContactNumber"]?.Errors[0].ErrorMessage
+                        @ViewData.ModelState["ContactNumber1"]?.Errors[0].ErrorMessage
                     </span>
                 }
             </div>
