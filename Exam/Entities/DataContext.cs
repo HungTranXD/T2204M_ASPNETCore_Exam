@@ -8,9 +8,7 @@ namespace Exam.Entities
         { 
         }
 
-        public DbSet<Author> Authors { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
-        public DbSet<Book> Books { get; set; }
-        
     }
 }
